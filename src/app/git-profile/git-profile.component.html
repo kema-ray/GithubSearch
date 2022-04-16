@@ -14,24 +14,51 @@
                 <div class="col-md-4">
                     <img src="{{user.avatar_url}}" alt="Avatar">
                     <div class="heading">
-                        <h5 class="panel-title">{{user.name}}</h5>
+                        <h5 style="margin-top: 2%;" class="panel-title">{{user.name}}</h5> <br>
+                        <h6 class="panel-title">{{user.login}}</h6>
                     </div>
                     <a href="{{user.html_url}}">View profile</a> <br>
                     <!-- <h6 class="">Followers {{user.followers}}</h6> -->
                 </div>
                 <div class="col-md-8">
                     <div class="info">
-                        <p>{{user.bio}}</p>
+                        <p style="margin-top: 2%;">{{user.bio}}</p>
                         <button type="button" class="btn btn-primary"><span>Repositories {{user.public_repos}}</span></button>
                         <button type="button" class="btn btn-success"><span>Followers {{user.followers}}</span></button>
-                        <button type="button" class="btn btn-danger"><span>Following {{user.following}}</span></button> 
+                        <button type="button" class="btn btn-danger"><span>Following {{user.following}}</span></button>
+                        <button type="button" class="btn btn-info"><span> {{user.type}}</span></button>
                     </div>
-                    <!-- <br>
-                    <ul>
-                        <li>
+                    <br>
+                    <ul class="list-group">
+                        <li class="list-group-item">
                             <strong>Username:</strong>{{user.name}}
                         </li>
-                    </ul> -->
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>LogIn:</strong>{{user.login}}
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Company:</strong>{{user.company}}
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Location:</strong>{{user.location}}
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Blog:</strong><a href="">{{user.blog}}</a>
+                        </li>
+                    </ul>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <strong>Membership Since:</strong>{{user.created_at}}
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
