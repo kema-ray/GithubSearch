@@ -64,12 +64,14 @@
         </div>
     </div>
 </div>
-<!-- <div class="container">
-    <div>
-        <ul *ngFor="let repo of repo">
-            <li><a href="{{repo.html_url}}">{{repo.name}}</a></li>
-            <p>{{repo.description}}</p>
-            <p>{{repo.created_at | date}}</p>
-        </ul>
+<div class="container">
+    <div class="col-md-5" *ngFor="let repo of repo">
+        <div class="card">
+            <div class="card-body">
+                <a href="{{repo.html_url}}">{{repo.name}}</a>
+                <p>{{repo.description}}</p>
+                <p>{{repo.created_at | date}}</p>
+            </div>
+          </div>
     </div>
-</div> -->
+</div>
