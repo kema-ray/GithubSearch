@@ -1,7 +1,8 @@
 img {
     margin-top: 3%;
     margin-left: 10%;
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    /* height: 80px; */
 }
 .panel-title,
 a {
@@ -12,5 +13,8 @@ a:link{
 }
 a:hover{
     text-decoration: underline;
+}
+.btn{
+    margin-right: 3%;
 }
 
