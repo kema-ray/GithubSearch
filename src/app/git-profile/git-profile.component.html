@@ -1,13 +1,13 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-6 mt-2">
-            <form action="">
+<div class="container mx-auto">
+    <div class="">
+        <div class="mx-auto w-50 mt-2">
+            <form action="" >
                 <input type="text" class="form-control" placeholder="Search or jump to...">
             </form>
         </div>
     </div>
 </div>
-<div class="container-fluid">
+<div class="mt-3 container-fluid">
     <div class="panel">
         <div class="panel-body">
             <div class="row">
@@ -64,8 +64,39 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="col-md-5" *ngFor="let repo of repo">
+<div class="container" style="padding-left: 10%;">
+    <h4 style="text-align: center; margin-top: 2%;"><strong>User Respositories</strong></h4>
+    <div *ngFor="let repo of repo">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="card">
+                    <div class="card-body">
+                        <a href="{{repo.html_url}}">{{repo.name}}</a>
+                        <p>{{repo.description}}</p>
+                        <p>{{repo.created_at | date}}</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-3">
+                <span>Watchers {{repo.watchers}}</span>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="row">
+        <div class="col-md-9" *ngFor="let repo of repo">
+            <div class="card">
+                <div class="card-body">
+                    <a href="{{repo.html_url}}">{{repo.name}}</a>
+                    <p>{{repo.description}}</p>
+                    <p>{{repo.created_at | date}}</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-md-3">
+            <span>Watchers {{repo.watchers}}</span>
+        </div>
+    </div> -->
+    <!-- <div class="col-md-9" *ngFor="let repo of repo">
         <div class="card">
             <div class="card-body">
                 <a href="{{repo.html_url}}">{{repo.name}}</a>
@@ -74,4 +105,7 @@
             </div>
           </div>
     </div>
+    <div class="col-md-3">
+
+    </div> -->
 </div>
