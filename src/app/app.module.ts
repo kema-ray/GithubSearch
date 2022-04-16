@@ -6,12 +6,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GitProfileComponent } from './git-profile/git-profile.component';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    GitProfileComponent
+    GitProfileComponent,
+    DateCountPipe
   ],
   imports: [
     BrowserModule,
