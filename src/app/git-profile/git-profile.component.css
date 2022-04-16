@@ -1,8 +1,7 @@
 img {
-    margin-top: 3%;
-    margin-left: 10%;
-    border-radius: 50%;
-    /* height: 80px; */
+    width: 50%;
+    height: auto;
+    object-fit: cover;
 }
 .panel-title,
 a {

@@ -14,7 +14,7 @@
                 <div class="col-md-4">
                     <img src="{{user.avatar_url}}" alt="Avatar">
                     <div class="heading">
-                        <h5 style="margin-top: 2%;" class="panel-title">{{user.name}}</h5> <br>
+                        <h5 class="panel-title">{{user.name}}</h5> <br>
                         <h6 class="panel-title">{{user.login}}</h6>
                     </div>
                     <a href="{{user.html_url}}">View profile</a> <br>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="info">
-                        <p style="margin-top: 2%;">{{user.bio}}</p>
+                        <p>{{user.bio}}</p>
                         <button type="button" class="btn btn-primary"><span>Repositories {{user.public_repos}}</span></button>
                         <button type="button" class="btn btn-success"><span>Followers {{user.followers}}</span></button>
                         <button type="button" class="btn btn-danger"><span>Following {{user.following}}</span></button>
