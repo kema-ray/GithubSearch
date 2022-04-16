@@ -14,15 +14,15 @@
                 <div class="col-md-4">
                     <img src="{{user.avatar_url}}" alt="Avatar">
                     <div class="heading">
-                        <h5 class="panel-title">{{user.name}}</h5> <br>
-                        <h6 class="panel-title">{{user.login}}</h6>
+                        <h5 class="panel-title" style="color: aliceblue;">{{user.name}}</h5> <br>
+                        <h6 class="panel-title" style="color: aliceblue;">{{user.login}}</h6>
                     </div>
-                    <a href="{{user.html_url}}">View profile</a> <br>
+                    <a href="{{user.html_url}}" style="color: aliceblue;">View profile</a> <br>
                     <!-- <h6 class="">Followers {{user.followers}}</h6> -->
                 </div>
                 <div class="col-md-8">
                     <div class="info">
-                        <p>{{user.bio}}</p>
+                        <p style="color: aliceblue;">{{user.bio}}</p>
                         <button type="button" class="btn btn-primary"><span>Repositories {{user.public_repos}}</span></button>
                         <button type="button" class="btn btn-success"><span>Followers {{user.followers}}</span></button>
                         <button type="button" class="btn btn-primary"><span>Following {{user.following}}</span></button>
@@ -68,18 +68,20 @@
     <h4 style="text-align: center; margin-top: 2%;"><strong>User Respositories</strong></h4>
     <div *ngFor="let repo of repo">
         <div class="row">
-            <div class="col-md-9">
+            <div class="col-md-11">
                 <div class="card">
                     <div class="card-body">
                         <a href="{{repo.html_url}}">{{repo.name}}</a>
+                        <span style="color: blue; margin-left: 40%; margin-right: 2%;">Watchers: {{repo.watchers}}</span>
+                        <span style="color: blue;">Forks: {{repo.forks}}</span>
                         <p>{{repo.description}}</p>
                         <p>{{repo.created_at | date}}</p>
                     </div>
                   </div>
             </div>
-            <div class="col-md-3">
+            <!-- <div class="col-md-3">
                 <span>Watchers {{repo.watchers}}</span>
-            </div>
+            </div> -->
         </div>
     </div>
     <!-- <div class="row">

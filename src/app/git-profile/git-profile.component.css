@@ -14,6 +14,7 @@ a:link{
 }
 a:hover{
     text-decoration: underline;
+    color: blue;
 }
 .btn{
     margin-right: 3%;
