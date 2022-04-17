@@ -9,6 +9,7 @@ import { GitService } from '../git.service';
 export class GitProfileComponent implements OnInit {
   user!:any
   repo!:any
+  username!:any
   constructor(private gitService: GitService) { }
 
   ngOnInit(): void {
@@ -24,6 +25,12 @@ export class GitProfileComponent implements OnInit {
         console.log(repo)
       }
     )
+  }
+  searchUser(){
+    this.gitService.updateUser(this.username);
+    this.gitService.getUserRepo().subscribe(user=>{
+      this.user = user;
+    });
   }
 
 }

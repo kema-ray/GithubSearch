@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { HttpClient} from '@angular/common/http';
 import { Observable } from 'rxjs';
+import { User } from './user';
+import { Repos } from './repos';
 
 @Injectable({
   providedIn: 'root'
@@ -19,5 +21,8 @@ export class GitService {
    }
    getUserRepo():Observable<any>{
      return this.http.get<any>(this.REPO_URL)
+   }
+   updateUser(username: any){
+     this.username = username;
    }
 }
