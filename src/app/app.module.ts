@@ -7,18 +7,22 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { GitProfileComponent } from './git-profile/git-profile.component';
 import { DateCountPipe } from './date-count.pipe';
+import { FormsModule } from '@angular/forms';
+import { GitFormComponent } from './git-form/git-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     GitProfileComponent,
-    DateCountPipe
+    DateCountPipe,
+    GitFormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

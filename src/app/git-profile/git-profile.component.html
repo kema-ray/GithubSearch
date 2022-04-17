@@ -1,14 +1,20 @@
-<div class="container mx-auto">
+<!-- <div class="container mx-auto">
     <div class="">
         <div class="mx-auto w-50 mt-2">
-            <form action="" >
+            <form class="input" (ngSubmit)="form(username)" (gitUser)="feedback($event)">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search or jump to..." name="username" [(ngModel)]="username">
+                    <button type="submit">Search</button>
+                </div>
+                [(ngmodel)]="username.name" #name="ngmodel"
                 <input type="text" class="form-control" placeholder="Search or jump to...">
             </form>
         </div>
     </div>
-</div>
+</div> -->
+<app-git-form (newUsername)="getFeedback($event)"></app-git-form>
 <div class="mt-3 container-fluid">
-    <div class="panel">
+    <div class="panel" *ngIf="user">
         <div class="panel-body">
             <div class="row">
                 <div class="col-md-4">
@@ -79,35 +85,6 @@
                     </div>
                   </div>
             </div>
-            <!-- <div class="col-md-3">
-                <span>Watchers {{repo.watchers}}</span>
-            </div> -->
         </div>
     </div>
-    <!-- <div class="row">
-        <div class="col-md-9" *ngFor="let repo of repo">
-            <div class="card">
-                <div class="card-body">
-                    <a href="{{repo.html_url}}">{{repo.name}}</a>
-                    <p>{{repo.description}}</p>
-                    <p>{{repo.created_at | date}}</p>
-                </div>
-              </div>
-        </div>
-        <div class="col-md-3">
-            <span>Watchers {{repo.watchers}}</span>
-        </div>
-    </div> -->
-    <!-- <div class="col-md-9" *ngFor="let repo of repo">
-        <div class="card">
-            <div class="card-body">
-                <a href="{{repo.html_url}}">{{repo.name}}</a>
-                <p>{{repo.description}}</p>
-                <p>{{repo.created_at | date}}</p>
-            </div>
-          </div>
-    </div>
-    <div class="col-md-3">
-
-    </div> -->
 </div>
