@@ -63,9 +63,9 @@
             <div class="col-md-11">
                 <div class="card">
                     <div class="card-body">
-                        <a href="{{repo.html_url}}">{{repo.name}}</a>
+                        <a href="{{repo.html_url}}" appGithighlight>{{repo.name}}</a>
                         <span style="color: blue; margin-left: 40%; margin-right: 2%;">Watchers: {{repo.watchers}}</span>
-                        <span style="color: blue;">Forks: {{repo.forks}}</span>
+                        <span style="color: blue;" appGithighlight>Forks: {{repo.forks}}</span>
                         <p>{{repo.description}}</p>
                         <p>{{repo.created_at | date}}</p>
                     </div>

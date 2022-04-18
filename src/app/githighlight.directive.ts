@@ -6,13 +6,13 @@ import { Directive,ElementRef, HostListener } from '@angular/core';
 export class GithighlightDirective {
 
   constructor(private elem: ElementRef) { }
-  private highlight(color:string){
-    this.elem.nativeElement.style.backgroungColor=color;
-  }
   @HostListener('mouseenter') onMouseEnter(){
-    this.highlight('blue');
+    this.highlight('yellow');
   }
   @HostListener('mouseleave') onMouseLeave(){
     this.highlight('');
+  }
+  private highlight(color:string){
+    this.elem.nativeElement.style.backgroundColor=color;
   }
 }

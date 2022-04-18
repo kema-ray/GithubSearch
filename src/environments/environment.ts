@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  gitApiKey: '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',
+  // gitApiKey: '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',
 };
 
 /*
