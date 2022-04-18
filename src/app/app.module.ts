@@ -9,6 +9,7 @@ import { GitProfileComponent } from './git-profile/git-profile.component';
 import { DateCountPipe } from './date-count.pipe';
 import { FormsModule } from '@angular/forms';
 import { GitFormComponent } from './git-form/git-form.component';
+import { GithighlightDirective } from './githighlight.directive';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { GitFormComponent } from './git-form/git-form.component';
     NavbarComponent,
     GitProfileComponent,
     DateCountPipe,
-    GitFormComponent
+    GitFormComponent,
+    GithighlightDirective
   ],
   imports: [
     BrowserModule,
