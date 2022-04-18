@@ -12,8 +12,8 @@ Enter your Github username amd have an access to your
 ## User Requirements
 The user will have the following features when using this Application:
  1. Search for a Github user.
- 2.View the profile of that user.
- 3.View repositories of that user.
+ 2. View the profile of that user.
+ 3. View repositories of that user.
 ## Technologies used
 - HTML
 - CSS
