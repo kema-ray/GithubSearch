@@ -10,7 +10,7 @@ export class GithighlightDirective {
     this.elem.nativeElement.style.backgroungColor=color;
   }
   @HostListener('mouseenter') onMouseEnter(){
-    this.highlight('purple');
+    this.highlight('blue');
   }
   @HostListener('mouseleave') onMouseLeave(){
     this.highlight('');
