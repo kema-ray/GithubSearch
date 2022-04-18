@@ -8,9 +8,7 @@ import { Repos } from './repos';
   providedIn: 'root'
 })
 export class GitService {
-  // username = 'kema-ray';
   GH_API = "https://api.github.com"
-  // REPO_URL = `https://api.github.com/users/${this.username}/repos`
 
   constructor(private http: HttpClient) {
     // this.username = "kema-ray";
